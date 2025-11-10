@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\IImporter\IImporter.csproj" />
       <ProjectReference Include="..\IServices\IServices.csproj" />
     </ItemGroup>
 
