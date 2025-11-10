@@ -35,7 +35,7 @@ export class ReflectionComponent implements OnInit {
     this.reflectionApi.getImporters().pipe(
       catchError(err => {
         console.error('API Error:', err);
-        this.error = 'Falló la carga de los importadores. Revise la consola del backend y del navegador (problemas de CORS?).';
+        this.error = 'Falló la carga de los importadores';
         return of([]);
       }),
       finalize(() => {
